@@ -1,0 +1,32 @@
+aside {
+  background-color:  $aside_background;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          padding-left: 3em;
+        }
+      }
+    }
+
+    h3 {
+      text-decoration: none;
+      padding: 2em 0;
+      color: $text_color;
+      background-color: $heading_background;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: $background_color;
+      padding: 2em 0;
+      display: block;
+      :hover {
+        background-color: forestgreen;
+        color: $text_color;
+      }
+    }
+}

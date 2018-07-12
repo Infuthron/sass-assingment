@@ -1,0 +1,53 @@
+@font-face {
+    font-family: sierra;
+    src: url("SierraMadre.otf");
+}
+
+@import 'vars';
+@import 'aside';
+@import 'phonequery';
+@import 'tabletquery';
+
+body {
+  font-family: sierra;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+    padding: 3em;
+    color: pink;
+}
+
+h1, .tagline { color: $background_color;}
+
+section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-bottom: .2em;
+    img {
+      max-width: 100%;
+    }
+}
+
+.number {
+    background-color: $background_color;
+    color: $text_color;
+    font-size: 3em;
+    width: 1.2em;
+    text-align: right;
+    padding: .2em;
+}
+
+article {
+    padding: 1em;
+}
+
+footer {
+    background-color: $footer_background;
+    color: $footer_text;
+}
+
+.img {
+    margin: 0 auto;
+}

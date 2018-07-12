@@ -1,0 +1,162 @@
+@font-face {
+  font-family: sierra;
+  src: url("SierraMadre.otf");
+}
+aside {
+  background-color: rgba(180, 220, 255, 0.5);
+}
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+aside ul li a {
+  padding-left: 3em;
+}
+aside h3 {
+  text-decoration: none;
+  padding: 2em 0;
+  color: #fff;
+  background-color: #4455bb;
+}
+aside a {
+  text-decoration: none;
+  background-color: #47a;
+  padding: 2em 0;
+  display: block;
+}
+aside a :hover {
+  background-color: forestgreen;
+  color: #fff;
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "head head" "tip1 tip1" "tip2 tip3" "tip4 tip5" "tip6 tip6" "img img" "tip7 tip7" "tip8 aside" "tip9 aside" "tip9 aside" "tip10 tip10" "footer footer";
+  }
+
+  header {
+    grid-area: head;
+  }
+
+  .a1 {
+    grid-area: tip1;
+  }
+
+  .a2 {
+    grid-area: tip2;
+  }
+
+  .a3 {
+    grid-area: tip3;
+  }
+
+  .a4 {
+    grid-area: tip4;
+  }
+
+  .a5 {
+    grid-area: tip5;
+  }
+
+  .a6 {
+    grid-area: tip6;
+  }
+
+  .a7 {
+    grid-area: tip7;
+  }
+
+  .a8 {
+    grid-area: tip8;
+  }
+
+  .a9 {
+    grid-area: tip9;
+  }
+
+  .a10 {
+    grid-area: tip10;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .img {
+    grid-area: img;
+  }
+
+  .a1_article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .a1_article h3 {
+    grid-column: span 2;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "head head head" "tip1 tip2 tip3" "tip4 tip5 tip6" "img img aside" "tip7 tip7 aside" "tip8 tip9 aside" "tip10 tip10 aside" "footer footer footer";
+  }
+}
+body {
+  font-family: sierra;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 3em;
+  color: pink;
+}
+
+h1, .tagline {
+  color: #47a;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: 0.2em;
+}
+section img {
+  max-width: 100%;
+}
+
+.number {
+  background-color: #47a;
+  color: #fff;
+  font-size: 3em;
+  width: 1.2em;
+  text-align: right;
+  padding: 0.2em;
+}
+
+article {
+  padding: 1em;
+}
+
+footer {
+  background-color: #333;
+  color: #eee;
+}
+
+.img {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=css/main.css.map */

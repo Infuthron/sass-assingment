@@ -1,0 +1,45 @@
+@media screen and (min-width: 760px) {
+  body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "head head"
+      "tip1 tip1"
+      "tip2 tip3"
+      "tip4 tip5"
+      "tip6 tip6"
+      "img img"
+      "tip7 tip7"
+      "tip8 aside"
+      "tip9 aside"
+      "tip9 aside"
+      "tip10 tip10"
+      "footer footer";
+  }
+
+  header {grid-area: head;}
+  .a1 {grid-area: tip1;}
+  .a2 {grid-area: tip2;}
+  .a3 {grid-area: tip3;}
+  .a4 {grid-area: tip4;}
+  .a5 {grid-area: tip5;}
+  .a6 {grid-area: tip6;}
+  .a7 {grid-area: tip7;}
+  .a8 {grid-area: tip8;}
+  .a9 {grid-area: tip9;}
+  .a10 {grid-area: tip10;}
+  aside {grid-area: aside;}
+  footer {grid-area: footer;}
+  .img {grid-area: img;}
+
+  .a1_article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .a1_article h3 {grid-column: span 2;}
+
+  footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+  }
+}
